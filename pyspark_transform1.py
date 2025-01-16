@@ -125,7 +125,7 @@ only showing top 20 rows
 
 #Stored the data in silver layer
 
-df1.write.format('parquet')\
+df.write.format('parquet')\
  .mode('append')\
  .option('path','/mnt/silver/kc12/processed')\
  .save()
