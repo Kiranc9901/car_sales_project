@@ -91,3 +91,35 @@ df.show()
 |   BR0024|  DLR0210|Tat-M190|11038722|         3|DT00012| 14|    1|2017|Aixam-Mega (inclu...|          ZAZ Motors|           Tat| 3679574.0|
 +---------+---------+--------+--------+----------+-------+---+-----+----+--------------------+--------------------+--------------+----------+
 only showing top 20 rows
+
+#Groupig on Year and branchname and aggregated the total units_sold and sorted on ascending on year and descending on Total_units 
+                                                                                     
+df1=df.groupBy('Year','BranchName').agg(sum('Units_Sold').alias('Total_Units')).sort('Year','Total_Units',ascending=[1,0])
+df1.show()
+
++----+--------------------+-----------+
+|Year|          BranchName|Total_Units|
++----+--------------------+-----------+
+|2017|       Alpine Motors|         24|
+|2017|      Bristol Motors|         23|
+|2017|        Acura Motors|         23|
+|2017|          BMW Motors|         23|
+|2017| Aston Martin Motors|         23|
+|2017|        Ariel Motors|         21|
+|2017|     Daihatsu Motors|         21|
+|2017|      Gilbern Motors|         21|
+|2017|  Asia Motors Motors|         20|
+|2017|          DAF Motors|         19|
+|2017|       Anadol Motors|         19|
+|2017|     DeLorean Motors|         19|
+|2017|      AC Cars Motors|         19|
+|2017|         Glas Motors|         18|
+|2017|   Auto-Union Motors|         18|
+|2017|   AMC, Eagle Motors|         18|
+|2017|     Caterham Motors|         17|
+|2017|       Datsun Motors|         17|
+|2017|        Alvis Motors|         17|
+|2017|Chevrolet India M...|         16|
++----+--------------------+-----------+
+only showing top 20 rows
+
