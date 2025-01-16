@@ -1,0 +1,9 @@
+{
+	"name": "kc12-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7a7bd064-737a-4197-a5ce-d67896b40ee7",
+		"tenantId": "6e5e7d50-bca4-4ad5-aa0f-337f17a7a247"
+	}
+}
