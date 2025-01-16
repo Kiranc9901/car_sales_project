@@ -2,3 +2,29 @@ df=spark.read.format('parquet')\
     .option('inferSchema','true')\
     .load('/mnt/kc12/data_a4e3bac6-55a8-4989-95a3-3a3e16881a76_6558b524-87e6-482d-9ee2-26a8b0552eea.parquet')
 display(df)
+
++---------+---------+--------+--------+----------+-------+---+-----+--------------------+--------------------+
+|Branch_ID|Dealer_ID|Model_Id| Revenue|Units_Sold|Date_ID|Day|Month|          BranchName|          DealerName|
++---------+---------+--------+--------+----------+-------+---+-----+--------------------+--------------------+
+|   BR0001|  DLR0001|  BMW-M1|13363978|         2|DT00001|  1|    1|      AC Cars Motors|      AC Cars Motors|
+|   BR0003|  DLR0228|Hon-M218|17376468|         3|DT00001| 10|    5|      AC Cars Motors|       Deccan Motors|
+|   BR0004|  DLR0208|Tat-M188| 9664767|         3|DT00002| 12|    1|      AC Cars Motors|     Wiesmann Motors|
+|   BR0005|  DLR0188|Hyu-M158| 5525304|         3|DT00002| 16|    9|      AC Cars Motors|       Subaru Motors|
+|   BR0006|  DLR0168|Ren-M128|12971088|         3|DT00003| 20|    5|      AC Cars Motors|         Saab Motors|
+|   BR0008|  DLR0128| Hon-M68| 7321228|         1|DT00004| 28|    4|      AC Cars Motors|Messerschmitt Motors|
+|   BR0009|  DLR0108| Cad-M38|11379294|         2|DT00004| 31|   12|      AC Cars Motors|        Lexus Motors|
+|   BR0010|  DLR0088|  Mer-M8|11611234|         2|DT00005|  4|    9|      AC Cars Motors|IFA (including Tr...|
+|   BR0011|  DLR0002|  BMW-M2|19979446|         2|DT00005|  2|    1|        Acura Motors|        Acura Motors|
+|   BR0011|  DLR0069|Vol-M256|14181510|         3|DT00006|  9|    5|        Acura Motors|          Geo Motors|
+|   BR0012|  DLR0249|BMW-M249| 5358057|         1|DT00006|  6|    9|        Acura Motors|        Acura Motors|
+|   BR0013|  DLR0229|Hon-M219|16150431|         3|DT00007| 11|    5|        Acura Motors|       Herald Motors|
+|   BR0014|  DLR0209|Tat-M189|13389350|         2|DT00007| 13|    1|        Acura Motors|      Zastava Motors|
+|   BR0015|  DLR0189|Hyu-M159| 4891618|         2|DT00008| 17|    9|        Acura Motors|      Sunbeam Motors|
+|   BR0017|  DLR0149| Lex-M99| 5059144|         2|DT00008| 25|    8|        Acura Motors|        Panoz Motors|
+|   BR0018|  DLR0129| Hon-M69|17369466|         2|DT00009| 29|    4|        Acura Motors|          Mia Motors|
+|   BR0019|  DLR0109| Cad-M39|26969532|         3|DT00010|  1|    1|        Acura Motors|       Ligier Motors|
+|   BR0020|  DLR0089|  Dod-M9| 4816794|         2|DT00011|  5|    9|        Acura Motors|     Infiniti Motors|
+|   BR0021|  DLR0070|Vol-M257| 7738896|         1|DT00011| 10|    5|Aixam-Mega (inclu...|      Gilbern Motors|
+|   BR0024|  DLR0210|Tat-M190|11038722|         3|DT00012| 14|    1|Aixam-Mega (inclu...|          ZAZ Motors|
++---------+---------+--------+--------+----------+-------+---+-----+--------------------+--------------------+
+only showing top 20 rows
