@@ -1,9 +1,4 @@
 
-dbutils.fs.mount( source = 'wasbs://gold@kc123.blob.core.windows.net', 
-                 mount_point= '/mnt/gold/kc12', extra_configs ={'fs.azure.sas.gold.kc123.blob.core.windows.net':'sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2025-01-19T20:15:35Z&st=2025-01-17T12:15:35Z&spr=https&sig=hHshdAsZ8Iw07e91peukoTTAiK27MtrfYPTuuffPf%2B0%3D'})
-
-
-
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
