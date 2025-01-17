@@ -28,7 +28,8 @@
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -65,7 +66,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Model_Id",
+									"name": "Model_ID",
 									"type": "String",
 									"physicalType": "varchar"
 								}
@@ -126,6 +127,18 @@
 								},
 								"sink": {
 									"name": "Month",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Year",
 									"type": "Int32",
 									"physicalType": "int"
 								}
