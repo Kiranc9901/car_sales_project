@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "kc12-adf"
+		},
+		"LS_GEN2_accountKey": {
+			"value": ""
+		},
+		"SQL_DB_LS_password": {
+			"value": ""
+		},
+		"Github_LS_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"LS_GEN2_properties_typeProperties_url": {
+			"value": "https://kc123.dfs.core.windows.net/"
+		},
+		"SQL_DB_LS_properties_typeProperties_server": {
+			"value": "kc123.database.windows.net"
+		},
+		"SQL_DB_LS_properties_typeProperties_database": {
+			"value": "kc12"
+		},
+		"SQL_DB_LS_properties_typeProperties_userName": {
+			"value": "adminkc12"
+		}
+	}
+}
